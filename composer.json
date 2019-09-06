@@ -1,0 +1,48 @@
+{
+    "name": "concept24/payu-romania",
+    "type": "library",
+    "description": "PayU Romania driver for the Omnipay payment processing library",
+    "keywords": [
+        "payu-romania",
+        "gateway",
+        "merchant",
+        "omnipay",
+        "pay",
+        "payment",
+        "payu",
+        "purchase",
+        "romania"
+    ],
+    "homepage": "",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Said İmamoğlu",
+            "email": "said.imamoglu@biberltd.com"
+        },
+        {
+            "name": "Dan Toma",
+            "homepage": "https://github.com/dantoma/omnipay-payu-romania"
+        },
+        {
+            "name": "Mihai Constantinescu",
+            "homepage": ""
+        },
+    ],
+    "autoload": {
+        "psr-4": { "Concept24\\Omnipay\\PayURomania\\" : "src/" }
+    },
+    "require": {
+        "php": "^7.1",
+        "omnipay/common": "^3.0.2",
+        "vlucas/phpdotenv": "^2.2"
+    },
+    "require-dev": {
+        "omnipay/tests": "^3"
+    },
+    "extra": {
+        "branch-alias": {
+            "dev-master": "3.0.x-dev"
+        }
+    }
+}
