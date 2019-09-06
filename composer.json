@@ -26,8 +26,8 @@
         },
         {
             "name": "Mihai Constantinescu",
-            "homepage": ""
-        },
+            "homepage": "https://github.com/concept24/payu-romania.git"
+        }
     ],
     "autoload": {
         "psr-4": { "Concept24\\Omnipay\\PayURomania\\" : "src/" }
