@@ -18,7 +18,7 @@ class PurchaseRequest extends AbstractRequest
     protected $endpoints = array(
         'authorize' => 'https://secure.payu.ro/order/alu/v3',
         'purchase' => 'https://secure.payu.ro/order/alu/v3',
-        'test' => 'http://secure.payu.ro/order/alu/v3',
+        'test' => 'http://sandbox.payu.ro/order/alu/v3',
     );
     /**
      * @var array
@@ -227,7 +227,6 @@ class PurchaseRequest extends AbstractRequest
         $data['PRICES_CURRENCY'] = $this->getCurrency();
         // Order Hash
         $data["ORDER_HASH"] = $this->generateHash($data);
-        $this->printCurlOutput($data);
         return $data;
     }
 
